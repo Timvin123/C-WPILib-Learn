@@ -1,5 +1,5 @@
 # C++ Learning
-## Functions and Basic Yypes
+## Functions and Basic Types
 
 ## Home work
 * If bool only holds (0 or 1) -> only 1 bit is needed. Why does the computer store it as a byte(8 bits)
