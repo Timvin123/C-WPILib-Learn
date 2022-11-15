@@ -1,0 +1,12 @@
+Functions and Types/.vs/*
+*.vcxproj
+*.tlog*
+*.idb
+*.pdb
+*.ilk
+*.obj
+*.exe.recipe
+*.vcxproj.user
+*.vcxproj.filters
+*.exe
+*.sln
