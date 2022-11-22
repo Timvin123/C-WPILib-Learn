@@ -13,3 +13,10 @@ struct MyStruct
     bool c = 0;
 };
 ```
+
+
+## 22/11/2022
+* Put Arduino code in to github 
+* Make following colors on arduino
+  * Yellow
+  * Purple
