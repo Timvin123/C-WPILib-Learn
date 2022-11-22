@@ -16,7 +16,11 @@ struct MyStruct
 
 
 ## 22/11/2022
-* Put Arduino code in to github 
+* Put Arduino  and C++ code in to github 
 * Make following colors on arduino
   * Yellow
   * Purple
+
+* write a factorial function for N.
+   factortial(2) = 2
+   factorial(5) = 120
