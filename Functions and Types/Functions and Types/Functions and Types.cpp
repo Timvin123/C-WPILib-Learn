@@ -50,4 +50,5 @@ int main()
     std::cout << r.b << std::endl;
     std::cout << "MyStruct is " << sizeof(r) << " bytes" << std::endl;
     std::cout << "MyStruct is " << sizeof(MySecondStruc) << " bytes" << std::endl;
+    std::cout << "LongLong is " << sizeof(long long) << " bytes" << std::endl;
 }
