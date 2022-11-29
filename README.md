@@ -24,3 +24,10 @@ struct MyStruct
 * write a factorial function for N.
    factortial(2) = 2
    factorial(5) = 120
+
+
+## 29/11/2022
+
+* Write a function to add 3 variables. add(3, 4, 5) validate correcteness programatically. 
+* Write a function to get X to the power of Y. ToPower(X,Y)
+* Read about GTest.
