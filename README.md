@@ -31,3 +31,7 @@ struct MyStruct
 * Write a function to add 3 variables. add(3, 4, 5) validate correcteness programatically. 
 * Write a function to get X to the power of Y. ToPower(X,Y)
 * Read about GTest.
+
+## 6/12/2022
+### Make a new project:
+*Go to file => New => Project => CMake Project.
