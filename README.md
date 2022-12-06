@@ -34,4 +34,4 @@ struct MyStruct
 
 ## 6/12/2022
 ### Make a new project:
-*Go to file => New => Project => CMake Project.
+*Go to file => New => Project => Consle App.
