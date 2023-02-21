@@ -62,4 +62,12 @@ https://youtu.be/lLdYFFIyc60
 https://youtu.be/DedCGNJAZQY
 ### C++ Output and Language Basics
 * First Code Example:
-** The next cell contains the first example of code that might be included in a typical C++ program.
+*   The next cell contains the first example of code that might be included in a typical C++ program.
+```C++
+#include <iostream>
+using std::cout;
+
+int main() {
+    cout << "Hello!" << "\n";   
+}
+```
