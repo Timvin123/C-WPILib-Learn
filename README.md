@@ -47,3 +47,5 @@ struct MyStruct
 ```C++
 int main()
 ```
+* To compile, use the following command: g++ main.cpp
+* To run, use: ./a.out
