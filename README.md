@@ -55,3 +55,4 @@ int main() {
     return 0;
 }
 ```
+### Compiled Languages vs Scripted Language
