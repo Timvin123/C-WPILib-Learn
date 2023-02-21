@@ -39,5 +39,5 @@ struct MyStruct
 # Udacity_LearningC++
 ## Introduction To C++
 ### Intro
-*![image](https://user-images.githubusercontent.com/115622266/220465619-d116cce2-d2e8-47fb-bd8c-16db6a71209e.png)
+![image](https://user-images.githubusercontent.com/115622266/220465619-d116cce2-d2e8-47fb-bd8c-16db6a71209e.png)
 
