@@ -56,4 +56,10 @@ int main() {
 }
 ```
 ### Compiled Languages vs Scripted Language
-* Listen to videos on udacity and write summary.
+* Advantages and Disadvantages of Compiled Languages
+https://youtu.be/lLdYFFIyc60
+* Advantages of a Dynamically Scripted Language
+https://youtu.be/DedCGNJAZQY
+### C++ Output and Language Basics
+* First Code Example:
+** The next cell contains the first example of code that might be included in a typical C++ program.
