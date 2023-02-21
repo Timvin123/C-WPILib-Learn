@@ -80,3 +80,19 @@ int main() {
 cout << "Hello" << "\n";
 ```
 * In this line, the code is using cout to send output to the notebook. The << operator is the stream insertion operator, and it writes what's on the right side of the operator to the left side. So in this case, "Message here" is written to the output stream cout.
+### Send Output to the Console
+* Previously, you wrote the most basic program that will compile in C++: a simple main(). In this exercise, you will modify that program to print output to the terminal. Don't forget that you can compile and run your program with the following two steps from the command line:
+* g++ main.cpp
+* ./a.out
+* To Complete This Exercise:
+* Add code to the main.cpp file below to print "Hello!" using cout.
+```C++
+#include <iostream>
+using std::cout;
+using std::endl;
+
+int main() {
+  // TODO: Add your code here:
+  cout << "Hello" << endl;
+}
+```
