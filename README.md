@@ -40,4 +40,10 @@ struct MyStruct
 ## Introduction To C++
 ### Intro
 ![image](https://user-images.githubusercontent.com/115622266/220465619-d116cce2-d2e8-47fb-bd8c-16db6a71209e.png)
-
+### Write and Run Your First C++ Program
+* Compile your code with a compiler.
+* Run the executable file that the compiler outputs.
+* In C++, every program contains a main function which is executed automatically when the program is run. Every part of a C++ program is run directly or indirectly from main, and the most basic program that will compile in C++ is just a main function with nothing else.
+```C++
+int main()
+```
