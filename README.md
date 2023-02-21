@@ -56,3 +56,4 @@ int main() {
 }
 ```
 ### Compiled Languages vs Scripted Language
+* Listen to videos on udacity and write summary.
