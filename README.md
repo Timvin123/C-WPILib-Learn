@@ -146,3 +146,155 @@ For longer comments, you can enclose the text with an opening
 slash-star and closing star-slash.
 */ 
 ```
+### Using Auto
+* In your previous code, the type for each variable was explicitly declared. In general, this is not necessary, and the compiler can determine the type based on the value being assigned. To have the type automatically determined, use the auto keyword. You can test this by executing the cell below:
+```C++
+#include <iostream>
+#include <vector>
+using std::vector;
+using std::cout;
+
+int main() {
+    auto i = 5;
+    auto v_6 = {1, 2, 3};
+    cout << "Variables declared and initialized without explicitly stating type!" << "\n";
+}
+```
+* It is helpful to manually declare the type of a variable if you want the variable type to be clear for reader of your code, or if you want to be explicit about the number precision being used; C++ has several number types with different levels of precision, and this precision might not be clear from the value being assigned.
+#### Practice
+* Practice using auto to declare and initialize a vector v with the value {7, 8, 9, 10}. If you have trouble, click here for help.
+```C++
+#include <iostream>
+#include <vector>
+using std::vector;
+using std::cout;
+
+int main() {
+    // Declare and initialize v using auto here.
+    auto v = {7,8,9,10};
+    cout << "yes" << std::endl;
+
+}
+```
+### Store a Grid in Your Program
+* In order to write the A* search algorithm, you will need a grid or "board" to search through. We'll be working with this board throughout the remaining exercises, and we'll start by storing a hard-coded board in the main function. In later exercises, you will write code to read the board from a file.
+#### To Complete This Exercise:
+* In the main function, declare a variable board as a vector of vectors of ints: vector<vector<int>>.
+Assign this data to the board variable:
+```C++
+{{0, 1, 0, 0, 0, 0},
+{0, 1, 0, 0, 0, 0},
+{0, 1, 0, 0, 0, 0},
+{0, 1, 0, 0, 0, 0},
+{0, 0, 0, 0, 1, 0}}
+```
+* Note: you will need to include the vector library, just as iostream is included. You will also need to use the namespace std::vector if you want to write vector rather than std::vector in your code.
+* This exercise will be ungraded, but if you get stuck, you can find the solution in solution.cpp. Finally, if you feel a little crowded in the editor below and need more space to work, you can click the "Expand" button in the lower left corner.
+```C++
+#include <iostream>
+#include <vector>
+using std::vector;
+using std::cout;
+
+
+int main() {
+  // TODO: Declare a "board" variable here, and store
+  // the data provided above.
+  
+  vector<vector<int>> board{{0, 1, 0, 0, 0, 0},
+{0, 1, 0, 0, 0, 0},
+{0, 1, 0, 0, 0, 0},
+{0, 1, 0, 0, 0, 0},
+{0, 0, 0, 0, 1, 0}};
+  cout << "Hello!" << "\n";
+}
+```
+### Working with Vectors
+#### 1D Vector Access
+* To begin, it is helpful to know how to access vector elements of an existing vector. Execute the cells below to see how this can be done:
+```C++
+#include <iostream>
+#include <vector>
+using std::vector;
+using std::cout;
+
+int main() {
+    vector<int> a = {0, 1, 2, 3, 4};
+    cout << a[0];
+    cout << a[1];
+    cout << a[2];
+    cout << "\n";
+}
+```
+* Great! Now try accessing some of the elements of vector a yourself in the cell bellow:
+```C++
+#include <iostream>
+#include <vector>
+using std::vector;
+using std::cout;
+
+int main() {
+    vector<int> a = {0, 1, 2, 3, 4};
+    // Add some code here to access and print elements of a.
+    cout << a[0];
+    cout << a[2];
+    cout << a[10];
+    cout << "\n";
+}
+```
+* If you tried to access the elements of a using an out-of-bound index, you might have noticed that there is no error or exception thrown. If you haven't seen this already, try the following code in the cell above to see what happens:
+```C++
+cout << a[10];
+```
+* In this case, the behavior is undefined, so you can not depend on a certain value to be returned. Be careful about this! In a later lesson where you will learn about exceptions, we will discuss other ways to access vector elements that don't fail silently with out-of-range indices.
+#### 2D Vector Access
+* In the previous exercise, you stored a 2D vector - a vector<vector<int>>. The syntax for accessing elements of a 2D vector is very similar to accessing in a 1D vector. In the second cell below, try accessing an element of b. If you get stuck, click the solution button for help.
+```C++
+#include <iostream>
+#include <vector>
+using std::vector;
+using std::cout;
+
+int main() {
+    vector<vector<int>> b = {{1, 1, 2, 3},
+                             {2, 1, 2, 3},
+                             {3, 1, 2, 3}};
+    cout << b[2][3];
+    cout << "\n";
+}
+```
+#### Getting a Vector's Length
+##### 1D Vector Length
+* One method of a vector object that will be useful in the next code exercise is the .size() method. This returns the length of the vector. Execute the cell below to see how this can be used:
+```C++
+#include <iostream>
+#include <vector>
+using std::vector;
+using std::cout;
+
+int main() {
+    vector<int> a = {0, 1, 2, 3, 4};
+    
+    // Print the length of vector a to the console.
+    cout << a.size() << "\n";
+}
+```
+##### 2D Vector Length
+* For the vector<vector<int>> b defined above, try to get the size of one of the inner vectors - this should be 4. If you have trouble, click the button below for some help.
+```C++
+#include <iostream>
+#include <vector>
+using std::vector;
+using std::cout;
+
+int main() {
+
+    vector<vector<int>> b = {{1, 1, 2, 3},
+                             {2, 1, 2, 3},
+                             {3, 1, 2, 3}};
+    // Print the length of an inner vector of b here.
+    cout << b[1].size();
+    cout << "\n";
+
+}
+```
