@@ -86,3 +86,15 @@ int main() {
     cout << b << "\n";
 }
 ```
+* Practice declaring an int with the name j in the cell below and assing the value 10 to j.
+```C++
+#include <iostream>
+#include <string>
+using std::cout;
+
+int main() {
+    // Declare and initialize j here.
+    int j = 10;
+    cout << j << std::endl;
+}
+```
