@@ -96,3 +96,31 @@ int main() {
   cout << "Hello" << endl;
 }
 ```
+### How to Store Data
+* In the next few notebooks, you will learn how to store data in your program, including basic variables with primitive types and vector containers.
+### Bjarne Introduces C++ Types
+* C++ uses variables, just as in nearly every other programming language. Unlike some other languages, however, in C++ each variable has a fixed type. When a new variable is "declared", or introduced in a program, the program author must (usually) specify the variable type in the declaration.
+* In this next video, Bjarne discusses types for C++.
+https://youtu.be/2tuTBl584ow
+### Primitive Variable Types
+* C++ has several "primitive" variable types, which are things like ints (integers), strings, floats, and others. These should be similar to variable types in other programming languages you have used.
+* Note: In the cells below, variables will be declared and values assigned. In C++, once a variable has been declared, it can not be redeclared in the same scope. This means that if you try to declare a variable twice in the same function, you will see an error.
+```C++
+#include <iostream>
+#include <string>
+using std::cout;
+
+int main() {
+    // Declaring and initializing an int variable.
+    int a = 9;
+    
+    // Declaring a string variable without initializing right away.
+    std::string b;
+    
+    // Initializing the string b.
+    b = "Here is a string";
+    
+    cout << a << "\n";
+    cout << b << "\n";
+}
+```
