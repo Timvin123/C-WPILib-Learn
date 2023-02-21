@@ -49,3 +49,9 @@ int main()
 ```
 * To compile, use the following command: g++ main.cpp
 * To run, use: ./a.out
+* Write a main function in the main.cpp file below, and then compile and run the program. The program will not have any output, but it should compile and run without errors.
+```C++
+int main() {
+    return 0;
+}
+```
