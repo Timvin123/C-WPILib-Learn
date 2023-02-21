@@ -86,7 +86,7 @@ int main() {
     cout << b << "\n";
 }
 ```
-* Practice declaring an int with the name j in the cell below and assing the value 10 to j.
+#### Practice declaring an int with the name j in the cell below and assing the value 10 to j.
 ```C++
 #include <iostream>
 #include <string>
@@ -119,4 +119,30 @@ int main() {
     v_3 = {6};
     cout << "Everything worked!" << "\n";
 }
+```
+##### 2D Vectors
+* Unfortunately, there isn't a built-in way to print vectors in C++ using cout. You will learn how to access vector elements and you will write your own function to print vectors later. For now, you can see how vectors are created and stored. Below, you can see how to nest vectors to create 2D containers.
+```C++
+#include <iostream>
+#include <vector>
+using std::vector;
+using std::cout;
+
+int main() {
+    // Creating a 2D vector.
+    vector<vector<int>> v {{1,2}, {3,4}};
+    cout << "Great! A 2D vector has been created." << "\n";
+}
+```
+### C++ Comments
+Bjarne talks about comments 
+https://youtu.be/KU2GjMbxnXo
+* You may have noticed comments in some of the code up until this point. C++ provides two kinds of comments:
+```C++
+// You can use two forward slashes for single line comments.
+
+/*
+For longer comments, you can enclose the text with an opening
+slash-star and closing star-slash.
+*/ 
 ```
