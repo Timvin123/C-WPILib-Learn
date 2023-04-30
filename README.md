@@ -161,6 +161,7 @@ int main() {
 }
 ```
 * It is helpful to manually declare the type of a variable if you want the variable type to be clear for reader of your code, or if you want to be explicit about the number precision being used; C++ has several number types with different levels of precision, and this precision might not be clear from the value being assigned.
+
 ### Practice
 * Practice using auto to declare and initialize a vector v with the value {7, 8, 9, 10}. If you have trouble, click here for help.
 ```C++
