@@ -299,7 +299,7 @@ int main() {
 
 }
 ```
-#### For Loops
+### For Loops
 * Just as in other languages you've worked with, C++ has both for loops and while loops. You will learn about for loops in the notebook below, and you will see while loops later in the course.
 ##### For Loop with an Index Variable
 *A simple for loop using an index variable has the following syntax. Click the button below for an explanation of the different parts.
