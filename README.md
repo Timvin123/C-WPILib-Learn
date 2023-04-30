@@ -299,9 +299,9 @@ int main() {
 
 }
 ```
-###For Loops
+### For Loops
 * Just as in other languages you've worked with, C++ has both for loops and while loops. You will learn about for loops in the notebook below, and you will see while loops later in the course.
-###For Loop with an Index Variable
+### For Loop with an Index Variable
 *A simple for loop using an index variable has the following syntax. Click the button below for an explanation of the different parts.
 ```C++
 #include <iostream>
@@ -313,7 +313,7 @@ int main() {
     }
 }
 ```
-###The Increment Operator
+### The Increment Operator
 *If you haven't seen the ++ operator before, this is the post-increment operator, and it is where the ++ in the name "C++" comes from. The operator increments the value of i.
 *There is also a pre-increment operator which is used before a variable, as well as pre and post decrement operators: --. The difference between pre and post lies in what value is returned by the operator when it is used.
 *You will only use the post-increment operator i++ for now, but if you are curious, click below for an explanation of the code:
@@ -349,7 +349,7 @@ int main() {
     cout << "The value of i is: " << i << "\n";
 }
 ```
-###Practice
+### Practice
 *Before you learn how to write a for loop using an iterator, practice writing a for loop that prints values from -3 through 10 in the cell below. Don't forget to assign an initial value (like 0) to your index variable!
 ```C++
 #include <iostream>
@@ -361,7 +361,7 @@ int main() {
         cout << i << std::endl;
 }
 ```
-###For Loop with a Container
+### For Loop with a Container
 *C++ offers several ways to iterate over containers. One way is to use an index-based loop as above. Another way is using a "range-based loop", which you will see frequently in the rest of this course. See the following code for an example of how this works:
 ```C++
 #include <iostream>
@@ -377,7 +377,7 @@ int main() {
     }
 }
 ```
-###Challenge
+### Challenge
 *In the next cell, try to write a double range-based for loop that prints all of the entries of the 2D vector b. If you get stuck, click on the solution button for an explanation.
 ```C++
 #include <iostream>
