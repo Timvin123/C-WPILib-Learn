@@ -1,8 +1,8 @@
 # Udacity_LearningC++
-## Introduction To C++
+## Introduction To C++ Language
 ### Intro
 ![image](https://user-images.githubusercontent.com/115622266/220465619-d116cce2-d2e8-47fb-bd8c-16db6a71209e.png)
-### Write and Run Your First C++ Program
+#### Write and Run Your First C++ Program
 * Compile your code with a compiler.
 * Run the executable file that the compiler outputs.
 * In C++, every program contains a main function which is executed automatically when the program is run. Every part of a C++ program is run directly or indirectly from main, and the most basic program that will compile in C++ is just a main function with nothing else.
@@ -17,12 +17,12 @@ int main() {
     return 0;
 }
 ```
-### Compiled Languages vs Scripted Language
+#### Compiled Languages vs Scripted Language
 * Advantages and Disadvantages of Compiled Languages
 https://youtu.be/lLdYFFIyc60
 * Advantages of a Dynamically Scripted Language
 https://youtu.be/DedCGNJAZQY
-### C++ Output and Language Basics
+#### C++ Output and Language Basics
 * First Code Example:
 * The next cell contains the first example of code that might be included in a typical C++ program.
 ```C++
@@ -60,11 +60,11 @@ int main() {
 ```
 ### How to Store Data
 * In the next few notebooks, you will learn how to store data in your program, including basic variables with primitive types and vector containers.
-### Bjarne Introduces C++ Types
+#### Bjarne Introduces C++ Types
 * C++ uses variables, just as in nearly every other programming language. Unlike some other languages, however, in C++ each variable has a fixed type. When a new variable is "declared", or introduced in a program, the program author must (usually) specify the variable type in the declaration.
 * In this next video, Bjarne discusses types for C++.
 https://youtu.be/2tuTBl584ow
-### Primitive Variable Types
+#### Primitive Variable Types
 * C++ has several "primitive" variable types, which are things like ints (integers), strings, floats, and others. These should be similar to variable types in other programming languages you have used.
 * Note: In the cells below, variables will be declared and values assigned. In C++, once a variable has been declared, it can not be redeclared in the same scope. This means that if you try to declare a variable twice in the same function, you will see an error.
 ```C++
@@ -100,9 +100,9 @@ int main() {
 ```
 ### What is a Vector?
 https://youtu.be/AfwagT0JJO0
-### C++ Vectors
-#### Vector Containers
-##### 1D Vectors
+#### C++ Vectors
+##### Vector Containers
+###### 1D Vectors
 * C++ also has several container types that can be used for storing data. We will start with vectors, as these will be used throughout this lesson, but we will also introduce other container types as needed.
 * Vectors are a sequence of elements of a single type, and have useful methods for getting the size, testing if the vector is empty, and adding elements to the vector.
 ```C++
@@ -120,7 +120,7 @@ int main() {
     cout << "Everything worked!" << "\n";
 }
 ```
-##### 2D Vectors
+###### 2D Vectors
 * Unfortunately, there isn't a built-in way to print vectors in C++ using cout. You will learn how to access vector elements and you will write your own function to print vectors later. For now, you can see how vectors are created and stored. Below, you can see how to nest vectors to create 2D containers.
 ```C++
 #include <iostream>
@@ -176,9 +176,9 @@ int main() {
 
 }
 ```
-### Store a Grid in Your Program
+#### Store a Grid in Your Program
 * In order to write the A* search algorithm, you will need a grid or "board" to search through. We'll be working with this board throughout the remaining exercises, and we'll start by storing a hard-coded board in the main function. In later exercises, you will write code to read the board from a file.
-#### To Complete This Exercise:
+##### To Complete This Exercise:
 * In the main function, declare a variable board as a vector of vectors of ints: vector<vector<int>>.
 Assign this data to the board variable:
 ```C++
@@ -296,5 +296,104 @@ int main() {
     cout << b[1].size();
     cout << "\n";
 
+}
+```
+###For Loops
+* Just as in other languages you've worked with, C++ has both for loops and while loops. You will learn about for loops in the notebook below, and you will see while loops later in the course.
+####For Loop with an Index Variable
+*A simple for loop using an index variable has the following syntax. Click the button below for an explanation of the different parts.
+```C++
+#include <iostream>
+using std::cout;
+
+int main() {
+    for (int i=0; i < 5; i++) {
+      cout << i << "\n";
+    }
+}
+```
+####The Increment Operator
+*If you haven't seen the ++ operator before, this is the post-increment operator, and it is where the ++ in the name "C++" comes from. The operator increments the value of i.
+*There is also a pre-increment operator which is used before a variable, as well as pre and post decrement operators: --. The difference between pre and post lies in what value is returned by the operator when it is used.
+*You will only use the post-increment operator i++ for now, but if you are curious, click below for an explanation of the code:
+```C++
+#include <iostream>
+using std::cout;
+
+int main() {
+    auto i = 1;
+
+    // Post-increment assigns i to c and then increments i.
+    auto c = i++;
+
+    cout << "Post-increment example:" << "\n";
+    cout << "The value of c is: " << c << "\n";
+    cout << "The value of i is: " << i << "\n";
+    cout << "\n";
+
+    // Reset i to 1.
+    i = 1;
+
+    // Pre-increment increments i, then assigns to c.
+    c = ++i;
+
+    cout << "Pre-increment example:" << "\n";
+    cout << "The value of c is: " << c << "\n";
+    cout << "The value of i is: " << i << "\n";
+    cout << "\n";
+
+    // Decrement i;
+    i--;
+    cout << "Decrement example:" << "\n";
+    cout << "The value of i is: " << i << "\n";
+}
+```
+####Practice
+*Before you learn how to write a for loop using an iterator, practice writing a for loop that prints values from -3 through 10 in the cell below. Don't forget to assign an initial value (like 0) to your index variable!
+```C++
+#include <iostream>
+using std::cout;
+
+int main() {
+    // Add your code here.
+    for (int i = -3; i <= 10; ++i)
+        cout << i << std::endl;
+}
+```
+####For Loop with a Container
+*C++ offers several ways to iterate over containers. One way is to use an index-based loop as above. Another way is using a "range-based loop", which you will see frequently in the rest of this course. See the following code for an example of how this works:
+```C++
+#include <iostream>
+#include <vector>
+using std::cout;
+using std::vector;
+
+int main() {
+    // Add your code here.
+    vector<int> a {1, 2, 3, 4, 5};
+    for (int i: a) {
+        cout << i << "\n";
+    }
+}
+```
+####Challenge
+*In the next cell, try to write a double range-based for loop that prints all of the entries of the 2D vector b. If you get stuck, click on the solution button for an explanation.
+```C++
+#include <iostream>
+#include <vector>
+using std::cout;
+using std::vector;
+
+int main() {
+    // Add your code here.
+    vector<vector<int>> b {{1, 2},
+                           {3, 4},
+                           {5, 6}};
+
+    // Write your double loop here.
+    for (auto i: b){
+        for (int x : i)
+            cout << x << "\n";
+    }
 }
 ```
