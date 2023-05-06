@@ -398,3 +398,80 @@ int main() {
     }
 }
 ```
+### Functions
+*The last thing you will need to learn in order to complete the next exercise is how to write a function. Fortunately, you have seen a function before when you wrote main()
+*When a function is declared and defined in a single C++ file, the basic syntax is as follows:
+```C++
+return_type FunctionName(parameter_list) {
+  // Body of function here.
+}
+```
+*In the cell below, there is a simple function to add two numbers and return the result. Test the code below, and click the button for a more in-depth explanation.
+```C++
+#include <iostream>
+using std::cout;
+
+// Function declared and defined here.
+int AdditionFunction(int i, int j) 
+{
+    return i + j;
+}
+
+int main() 
+{
+    auto d = 3;
+    auto f = 7;
+    cout << AdditionFunction(d, f) << "\n";
+}
+```
+##### Practice
+*Now that you've seen how to define and call a function, try this yourself in the cell below with a slightly more complicated example. Your function should accept a `vector` of `int`s as its argument and return the sum of all the `int`s in the vector. If you get stuck, click the solution button for help.
+```C++
+#include <iostream>
+#include <vector>
+using std::cout;
+using std::vector;
+
+// Define a function "AdditionFunction" here.
+// Instead of just two ints, this function should accept a vector<int> 
+// as the argument, and it should return the sum of all the ints in the vector.
+int AdditionFunction(auto x){
+    int y = 0;
+    for(int i = 0; i < 3; ++i){
+        y = y + x[i];
+    } 
+    return y;
+}
+
+int main() 
+{
+    vector<int> v {1, 2, 3};
+    
+    // Uncomment the following line to call your function:
+    cout << AdditionFunction(v) << "\n";
+}
+```
+#### Void Return Type
+*Sometimes a function doesn't need to return anything. For example, a function might simply modify an object that is passed into it, or it might just print to the terminal. If a function doesn't need to return a value, the `void` type can be used for the return type. Using the function syntax provided above, write a function `PrintStrings` that takes two strings as arguments and prints both of them. If you are having trouble, click the solution button for help.
+```C++
+#include <iostream>
+#include <string>
+using std::cout;
+using std::string;
+
+// Write the PrintStrings function here.
+void PrintStrings (a, b){
+    cout << a << " " << b << "\n";
+    return;
+}
+
+
+int main() 
+{
+    string s1 = "C++ is ";
+    string s2 = "super awesome.";
+    
+    // Uncomment the following line to call your function:
+    PrintStrings (s1, s2);
+}
+```
